@@ -1,0 +1,5 @@
+source ./variables.sh
+docker volume create --name concourse-db
+docker volume create --name concourse-web-keys
+docker volume create --name concourse-worker-keys
+docker-compose up
